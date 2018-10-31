@@ -1,0 +1,19 @@
+[parity]
+chain = "desafiochain.json"
+base_path = "/tmp/desafio2"
+[network]
+port = 30302
+[rpc]
+port = 8542
+apis = ["web3", "eth", "net", "personal", "parity", "parity_set", "traces", "rpc", "parity_accounts"]
+[ui]
+port = 8182
+[websockets]
+port = 8452
+[ipc]
+disable = true
+#[account]
+#password = ["node.pwds"]
+#[mining]
+#engine_signer = "address2"
+#reseal_on_txs = "none"
