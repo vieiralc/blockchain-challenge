@@ -13,7 +13,7 @@ class App extends Component {
     this.state = { 
       storageValue: 0, 
       web3: null, 
-      accounts: null, 
+      account: null, 
       contract: null,
       buffer: null,
       ipfsHash: ""
@@ -37,9 +37,15 @@ class App extends Component {
       Contract.setProvider(web3.currentProvider);
       const instance = await Contract.deployed();
 
+      instance.getImage.call()
+        .then(ipfsHash => {
+          this.setState({ ipfsHash })
+        })
+      
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
-      this.setState({ web3, accounts, contract: instance });
+      this.setState({ web3, account: accounts[0], contract: instance });
+      console.log('Account', this.state.account);
     } catch (error) {
       // Catch any errors for any of the above operations.
       alert(
@@ -67,8 +73,19 @@ class App extends Component {
         console.error(err);
         return
       }
-      this.setState({ ipfsHash: res[0].hash })
-      console.log('this.state.ipfsHash: ', this.state.ipfsHash);
+
+      const { contract } = this.state
+
+      contract.saveImage(res[0].hash, { from: this.state.account })
+        .then(result => {
+          // value fromo the contract to prove it worked
+          return contract.getImage.call()
+        })
+        .then(ipfsHash => {
+          // Update the state with the result
+          this.setState({ ipfsHash })
+          console.log('this.state.ipfsHash: ', this.state.ipfsHash);
+        })
     })
   }
 
@@ -92,7 +109,7 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="navbar pure-menu pure-menu-horizontal">
-          <a href="#" className="pure-menu-heading pure-menu-link">IPFS Image Upload DApp</a>
+          <a href="/" className="pure-menu-heading pure-menu-link">IPFS Image Upload DApp</a>
         </nav>
         
         <main className="container">
