@@ -15,12 +15,15 @@ class App extends Component {
       web3: null, 
       account: null, 
       contract: null,
+      allowedTimes: 1,
       buffer: null,
       ipfsHash: ""
     };
 
-    this.captureFile = this.captureFile.bind(this)
-    this.onSubmit = this.onSubmit.bind(this)
+    this.captureFile = this.captureFile.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+    this.onChange = this.onChange.bind(this);
+    this.getImage = this.getImage.bind(this);
   }
   
 
@@ -36,11 +39,6 @@ class App extends Component {
       const Contract = truffleContract(SimpleStorageContract);
       Contract.setProvider(web3.currentProvider);
       const instance = await Contract.deployed();
-
-      instance.getImage.call()
-        .then(ipfsHash => {
-          this.setState({ ipfsHash })
-        })
       
       // Set web3, accounts, and contract to the state, and then proceed with an
       // example of interacting with the contract's methods.
@@ -66,6 +64,10 @@ class App extends Component {
     }
   }
 
+  onChange(e) {
+    this.setState({allowedTimes: e.target.value})
+  }
+
   onSubmit(e) {
     e.preventDefault()
     ipfs.files.add(this.state.buffer, (err, res) => {
@@ -74,35 +76,49 @@ class App extends Component {
         return
       }
 
-      const { contract } = this.state
+      const { contract } = this.state;
 
-      contract.saveImage(res[0].hash, { from: this.state.account })
+      contract.addImage(res[0].hash, this.state.allowedTimes, { from: this.state.account })
         .then(result => {
           // value fromo the contract to prove it worked
-          return contract.getImage.call()
+          //return contract.getImage.call()
+          alert("Image added!")
+          console.log(res[0].hash)
         })
-        .then(ipfsHash => {
-          // Update the state with the result
-          this.setState({ ipfsHash })
-          console.log('this.state.ipfsHash: ', this.state.ipfsHash);
-        })
+        // .then(ipfsHash => {
+        //   // Update the state with the result
+        //   this.setState({ ipfsHash })
+        //   console.log('this.state.ipfsHash: ', this.state.ipfsHash);
+        // })
     })
   }
 
-  runExample = async () => {
-    const { accounts, contract } = this.state;
+  getImage(e) {
+    e.preventDefault()
+    const { contract } = this.state;
+    console.log(`ok`)
+    
+    contract.viewd.call().then(res => console.log(res.toNumber()))
 
-    // Stores a given value, 5 by default.
-    await contract.saveImage("5", { from: accounts[0] });
+    contract.getImage({from: this.state.account})
+      .then(res => console.log(res))
+  }
 
-    // Get the value from the contract to prove it worked.
-    const response = await contract.getImage();
-    //console.log(response)
-    // Update state with the result.
-    this.setState({ storageValue: response });
-  };
+  // runExample = async () => {
+  //   const { accounts, contract } = this.state;
+
+  //   // Stores a given value, 5 by default.
+  //   await contract.saveImage("5", { from: accounts[0] });
+
+  //   // Get the value from the contract to prove it worked.
+  //   const response = await contract.getImage();
+  //   //console.log(response)
+  //   // Update state with the result.
+  //   this.setState({ storageValue: response });
+  // };
 
   render() {
+
     if (!this.state.web3) {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
@@ -115,13 +131,14 @@ class App extends Component {
         <main className="container">
           <div className="pure-g">
             <div className="pure-u-1-1">
-              <h1>Your Image</h1>
+              <button onClick={this.getImage}>Your Image</button >
               <p>This image is stored on IPFS & the Ethereum Blockchain</p>
               <img src={`https://ipfs.io/ipfs/${this.state.ipfsHash}`} alt=""/>
               <h2>Upload Image</h2>
               
               <form onSubmit={this.onSubmit}>
                 <input type="file" onChange={this.captureFile}/> <br/>
+                <input type="number" min="1" name="number" onChange={this.onChange}/> <br/>
                 <input type="submit"/>
               </form>
               
