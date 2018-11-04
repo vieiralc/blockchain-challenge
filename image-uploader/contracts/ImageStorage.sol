@@ -2,30 +2,35 @@ pragma solidity ^0.4.24;
 
 contract ImageStorage {
     
-    event newImage(uint id, address owner);
+    address public owner;
+    string private ipfsHash;
+    uint public viewd;
+    uint public allowedViewNumber;
     
-    struct Image {
-        address owner;
-        string ipfsHash;
-        uint allowedViewTimes;
-        uint viewdTimes;
+    modifier onlyOwner() {
+        require(msg.sender == owner);
+        _;
     }
     
-    Image[] private images;
-    
-    function addImage(string _ipfsHash, uint _allowedViewTimes) public {
-        uint id = images.push(Image(msg.sender, _ipfsHash, _allowedViewTimes, 0)) - 1;
-        emit newImage(id, msg.sender);
+    constructor() public {
+        owner = msg.sender;
     }
     
-    function getImage(uint _imageID) public returns (string, address){
-        
-        require(images[_imageID].viewdTimes < images[_imageID].allowedViewTimes, "You cannot see this image anymore");
-        images[_imageID].viewdTimes++;
-        return (
-            images[_imageID].ipfsHash,
-            images[_imageID].owner
-        );
+    function addImage(string _ipfsHash, uint _allowedViewNumber) public {
+        ipfsHash = _ipfsHash;
+        allowedViewNumber = _allowedViewNumber;
+        viewd = 0;
+    }
+    
+    function getImage() public returns (string){
+        require(viewd < allowedViewNumber, "You are not allowed to see this image anymore");
+        viewd++;
+        return ipfsHash;
+    }
+    
+    function changeAllowedViewNumber(uint _newNumber) public onlyOwner() {
+        allowedViewNumber = _newNumber;
+        viewd = 0;
     }
     
 }
