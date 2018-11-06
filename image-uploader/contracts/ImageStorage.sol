@@ -2,35 +2,48 @@ pragma solidity ^0.4.24;
 
 contract ImageStorage {
     
-    address public owner;
-    string private ipfsHash;
-    uint public viewd;
-    uint public allowedViewNumber;
+  mapping (address => string) ipfsHash;
+  mapping (address => uint) viewd;
+  mapping (address => uint) allowedViewNumber;
+  
+  mapping (address => bool) accessAllowed;
+
+  constructor() public {
+    accessAllowed[msg.sender] = true;  
+  }
+
+  modifier platform() {
+    require(accessAllowed[msg.sender] == true, "You must be authorized");
+    _;
+  }
+
+  function allowAccess(address _address) platform public {
+    accessAllowed[_address] = true;
+  }
     
-    modifier onlyOwner() {
-        require(msg.sender == owner);
-        _;
-    }
+  function denyAccess(address _address) platform public {
+    accessAllowed[_address] = false;
+  }
+
+  // setters
+
+  function setHash(address _address, string _ipfsHash,uint _allowedViewNumber) platform public {
+    ipfsHash[_address] = _ipfsHash; 
+    allowedViewNumber[_address] = _allowedViewNumber;
+    viewd[_address] = 0;
+  }
+
+  function setViewd(address _address) platform public {
+    viewd[_address] += 1;
+  }
+
+  // getters
+
+  function getHash(address _address) public view platform returns (string) {
+    return ipfsHash[_address];
+  }
     
-    constructor() public {
-        owner = msg.sender;
-    }
-    
-    function addImage(string _ipfsHash, uint _allowedViewNumber) public {
-        ipfsHash = _ipfsHash;
-        allowedViewNumber = _allowedViewNumber;
-        viewd = 0;
-    }
-    
-    function getImage() public returns (string){
-        require(viewd < allowedViewNumber, "You are not allowed to see this image anymore");
-        viewd++;
-        return ipfsHash;
-    }
-    
-    function changeAllowedViewNumber(uint _newNumber) public onlyOwner() {
-        allowedViewNumber = _newNumber;
-        viewd = 0;
-    }
-    
+  function getViewd(address _address) public view platform returns (uint) {
+    return viewd[_address];
+  }
 }
