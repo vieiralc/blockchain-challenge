@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SimpleStorageContract from "./contracts/ImageStorage.json";
 import getWeb3 from "./utils/getWeb3";
 import truffleContract from "truffle-contract";
-import ipfs from './ipfs'
+import ipfs from './ipfs';
 
 import "./App.css";
 
@@ -11,7 +11,6 @@ class App extends Component {
   constructor() {
     super()
     this.state = { 
-      storageValue: 0, 
       web3: null, 
       account: null, 
       contract: null,
@@ -137,8 +136,8 @@ class App extends Component {
               <h2>Upload Image</h2>
               
               <form onSubmit={this.onSubmit}>
-                <input type="file" onChange={this.captureFile}/> <br/>
-                <input type="number" min="1" name="number" onChange={this.onChange}/> <br/>
+                <input type="file" onChange={this.captureFile} required/> <br/>
+                <input type="number" min="1" name="number" onChange={this.onChange} required/> <br/>
                 <input type="submit"/>
               </form>
               
