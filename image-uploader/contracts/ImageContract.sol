@@ -4,24 +4,37 @@ import "./ImageStorage.sol";
 
 contract ImageContract {
     
+    event incrementViewd(uint viewd);    
     ImageStorage imageStorage;
-    
-    event incrementEvent(string shouldIncrement);
     
     constructor(address _imageStorageAddress) public {
         imageStorage = ImageStorage(_imageStorageAddress);
     }
     
+    // setters
+    
     function setHash(string _ipfsHash, uint _allowedViewNumber) public {
         imageStorage.setHash(msg.sender, _ipfsHash, _allowedViewNumber);
     }
     
-    function getHash() public returns (string) {
+    function setViewd() public {
         imageStorage.setViewd(msg.sender);
+        emit incrementViewd(getViewd());
+    }
+    
+    
+    // getters
+    function getHash() public view returns (string) {
+        require(getViewd() < getAllowedViewNumber());
         return imageStorage.getHash(msg.sender);
     }
-    // chamar funcao que incrementa contador
-    // emitir evento falando que contador foi incrementado
-    // ao chegar o evento no front end chamar funcao 
-    // que apenas retorna o hash
+    
+    function getViewd() public view returns (uint) {
+        return imageStorage.getViewd(msg.sender);
+    }
+    
+    function getAllowedViewNumber() public view returns (uint) {
+        return imageStorage.getAllowedViewNumber(msg.sender);
+    }
+    
 }

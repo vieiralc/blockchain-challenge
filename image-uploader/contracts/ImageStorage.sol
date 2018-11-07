@@ -27,13 +27,13 @@ contract ImageStorage {
 
   // setters
 
-  function setHash(address _address, string _ipfsHash,uint _allowedViewNumber) platform public {
+  function setHash(address _address, string _ipfsHash,uint _allowedViewNumber) public platform {
     ipfsHash[_address] = _ipfsHash; 
     allowedViewNumber[_address] = _allowedViewNumber;
     viewd[_address] = 0;
   }
 
-  function setViewd(address _address) platform public {
+  function setViewd(address _address) public platform {
     viewd[_address] += 1;
   }
 
@@ -46,4 +46,9 @@ contract ImageStorage {
   function getViewd(address _address) public view platform returns (uint) {
     return viewd[_address];
   }
+  
+  function getAllowedViewNumber(address _address) public view platform returns (uint) {
+      return allowedViewNumber[_address];
+  }
+  
 }
