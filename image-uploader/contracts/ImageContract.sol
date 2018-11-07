@@ -30,7 +30,7 @@ contract ImageContract {
     }
     
     function getViewd() public view returns (uint) {
-        return imageStorage.getViewd(msg.sender);
+        return imageStorage.getViewd(msg.sender) + 1;
     }
     
     function getAllowedViewNumber() public view returns (uint) {
