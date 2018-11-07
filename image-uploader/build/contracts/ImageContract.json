@@ -94,20 +94,20 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5060405160208061086183398101806040528101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506107de806100836000396000f30060806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632b36e5d714610072578063c22cf13d1461009d578063d13319c4146100b4578063eefcf03714610144578063f5ab4dfc1461016f575b600080fd5b34801561007e57600080fd5b506100876101e2565b6040518082815260200191505060405180910390f35b3480156100a957600080fd5b506100b26102e0565b005b3480156100c057600080fd5b506100c96103f4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101095780820151818401526020810190506100ee565b50505050905090810190601f1680156101365780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561015057600080fd5b50610159610564565b6040518082815260200191505060405180910390f35b34801561017b57600080fd5b506101e0600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190505050610665565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632d5a7327336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156102a057600080fd5b505af11580156102b4573d6000803e3d6000fd5b505050506040513d60208110156102ca57600080fd5b8101908080519060200190929190505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370cc40c2336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801561039c57600080fd5b505af11580156103b0573d6000803e3d6000fd5b505050507f1f539c631c40b55e3ee24c22c89479df886fc7cf245d7b9d35c995478bd867196103dd610564565b6040518082815260200191505060405180910390a1565b60606103fe6101e2565b610406610564565b10151561041257600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16631da0b8fc336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b1580156104ce57600080fd5b505af11580156104e2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561050c57600080fd5b81019080805164010000000081111561052457600080fd5b8281019050602081018481111561053a57600080fd5b815185600182028301116401000000008211171561055757600080fd5b5050929190505050905090565b600060016000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639bff5a36336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561062457600080fd5b505af1158015610638573d6000803e3d6000fd5b505050506040513d602081101561064e57600080fd5b810190808051906020019092919050505001905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16634097b2913384846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561074857808201518184015260208101905061072d565b50505050905090810190601f1680156107755780820380516001836020036101000a031916815260200191505b50945050505050600060405180830381600087803b15801561079657600080fd5b505af11580156107aa573d6000803e3d6000fd5b5050505050505600a165627a7a7230582080b3b0b57332e8da16502d4b295fc720646e1426c62d5da6a7c084a1fcc3c5400029",
-  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632b36e5d714610072578063c22cf13d1461009d578063d13319c4146100b4578063eefcf03714610144578063f5ab4dfc1461016f575b600080fd5b34801561007e57600080fd5b506100876101e2565b6040518082815260200191505060405180910390f35b3480156100a957600080fd5b506100b26102e0565b005b3480156100c057600080fd5b506100c96103f4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101095780820151818401526020810190506100ee565b50505050905090810190601f1680156101365780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561015057600080fd5b50610159610564565b6040518082815260200191505060405180910390f35b34801561017b57600080fd5b506101e0600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190505050610665565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632d5a7327336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156102a057600080fd5b505af11580156102b4573d6000803e3d6000fd5b505050506040513d60208110156102ca57600080fd5b8101908080519060200190929190505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370cc40c2336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801561039c57600080fd5b505af11580156103b0573d6000803e3d6000fd5b505050507f1f539c631c40b55e3ee24c22c89479df886fc7cf245d7b9d35c995478bd867196103dd610564565b6040518082815260200191505060405180910390a1565b60606103fe6101e2565b610406610564565b10151561041257600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16631da0b8fc336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b1580156104ce57600080fd5b505af11580156104e2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561050c57600080fd5b81019080805164010000000081111561052457600080fd5b8281019050602081018481111561053a57600080fd5b815185600182028301116401000000008211171561055757600080fd5b5050929190505050905090565b600060016000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639bff5a36336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561062457600080fd5b505af1158015610638573d6000803e3d6000fd5b505050506040513d602081101561064e57600080fd5b810190808051906020019092919050505001905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16634097b2913384846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561074857808201518184015260208101905061072d565b50505050905090810190601f1680156107755780820380516001836020036101000a031916815260200191505b50945050505050600060405180830381600087803b15801561079657600080fd5b505af11580156107aa573d6000803e3d6000fd5b5050505050505600a165627a7a7230582080b3b0b57332e8da16502d4b295fc720646e1426c62d5da6a7c084a1fcc3c5400029",
-  "sourceMap": "56:983:0:-;;;168:115;8:9:-1;5:2;;;30:1;27;20:12;5:2;168:115:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;255:20;227:12;;:49;;;;;;;;;;;;;;;;;;168:115;56:983;;;;;;",
-  "deployedSourceMap": "56:983:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;904:128;;8:9:-1;5:2;;;30:1;27;20:12;5:2;904:128:0;;;;;;;;;;;;;;;;;;;;;;;470:118;;8:9:-1;5:2;;;30:1;27;20:12;5:2;470:118:0;;;;;;618:158;;8:9:-1;5:2;;;30:1;27;20:12;5:2;618:158:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;618:158:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;786:108;;8:9:-1;5:2;;;30:1;27;20:12;5:2;786:108:0;;;;;;;;;;;;;;;;;;;;;;;313:147;;8:9:-1;5:2;;;30:1;27;20:12;5:2;313:147:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;904:128;957:4;980:12;;;;;;;;;;;:33;;;1014:10;980:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;980:45:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;980:45:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;980:45:0;;;;;;;;;;;;;;;;973:52;;904:128;:::o;470:118::-;507:12;;;;;;;;;;;:21;;;529:10;507:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;507:33:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;507:33:0;;;;555:26;570:10;:8;:10::i;:::-;555:26;;;;;;;;;;;;;;;;;;470:118::o;618:158::-;658:6;697:22;:20;:22::i;:::-;684:10;:8;:10::i;:::-;:35;676:44;;;;;;;;737:12;;;;;;;;;;;:20;;;758:10;737:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;737:32:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;737:32:0;;;;;;39:16:-1;36:1;17:17;2:54;737:32:0;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;13:2;8:3;5:11;2:2;;;29:1;26;19:12;2:2;737:32:0;;;;;;20:11:-1;15:3;12:20;9:2;;;45:1;42;35:12;9:2;73:11;68:3;64:21;57:28;;126:4;121:3;117:14;163:9;145:16;142:31;139:2;;;186:1;183;176:12;139:2;224:3;218:10;338:9;333:1;319:12;315:20;297:16;293:43;290:58;268:11;254:12;251:29;239:118;236:2;;;370:1;367;360:12;236:2;0:382;;737:32:0;;;;;;730:39;;618:158;:::o;786:108::-;827:4;886:1;850:12;;;;;;;;;;;:21;;;872:10;850:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;850:33:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;850:33:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;850:33:0;;;;;;;;;;;;;;;;:37;843:44;;786:108;:::o;313:147::-;390:12;;;;;;;;;;;:20;;;411:10;423:9;434:18;390:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;390:63:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;390:63:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;390:63:0;;;;313:147;;:::o",
-  "source": "pragma solidity ^0.4.24;\n\nimport \"./ImageStorage.sol\";\n\ncontract ImageContract {\n    \n    event incrementViewd(uint viewd);    \n    ImageStorage imageStorage;\n    \n    constructor(address _imageStorageAddress) public {\n        imageStorage = ImageStorage(_imageStorageAddress);\n    }\n    \n    // setters\n    \n    function setHash(string _ipfsHash, uint _allowedViewNumber) public {\n        imageStorage.setHash(msg.sender, _ipfsHash, _allowedViewNumber);\n    }\n    \n    function setViewd() public {\n        imageStorage.setViewd(msg.sender);\n        emit incrementViewd(getViewd());\n    }\n    \n    \n    // getters\n    function getHash() public view returns (string) {\n        require(getViewd() < getAllowedViewNumber());\n        return imageStorage.getHash(msg.sender);\n    }\n    \n    function getViewd() public view returns (uint) {\n        return imageStorage.getViewd(msg.sender) + 1;\n    }\n    \n    function getAllowedViewNumber() public view returns (uint) {\n        return imageStorage.getAllowedViewNumber(msg.sender);\n    }\n    \n}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405160208061085e83398101806040528101908080519060200190929190505050806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506107db806100836000396000f30060806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632b36e5d714610072578063c22cf13d1461009d578063d13319c4146100b4578063eefcf03714610144578063f5ab4dfc1461016f575b600080fd5b34801561007e57600080fd5b506100876101e2565b6040518082815260200191505060405180910390f35b3480156100a957600080fd5b506100b26102e0565b005b3480156100c057600080fd5b506100c96103f4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101095780820151818401526020810190506100ee565b50505050905090810190601f1680156101365780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561015057600080fd5b50610159610564565b6040518082815260200191505060405180910390f35b34801561017b57600080fd5b506101e0600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190505050610662565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632d5a7327336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156102a057600080fd5b505af11580156102b4573d6000803e3d6000fd5b505050506040513d60208110156102ca57600080fd5b8101908080519060200190929190505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370cc40c2336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801561039c57600080fd5b505af11580156103b0573d6000803e3d6000fd5b505050507f1f539c631c40b55e3ee24c22c89479df886fc7cf245d7b9d35c995478bd867196103dd610564565b6040518082815260200191505060405180910390a1565b60606103fe6101e2565b610406610564565b10151561041257600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16631da0b8fc336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b1580156104ce57600080fd5b505af11580156104e2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561050c57600080fd5b81019080805164010000000081111561052457600080fd5b8281019050602081018481111561053a57600080fd5b815185600182028301116401000000008211171561055757600080fd5b5050929190505050905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639bff5a36336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561062257600080fd5b505af1158015610636573d6000803e3d6000fd5b505050506040513d602081101561064c57600080fd5b8101908080519060200190929190505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16634097b2913384846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561074557808201518184015260208101905061072a565b50505050905090810190601f1680156107725780820380516001836020036101000a031916815260200191505b50945050505050600060405180830381600087803b15801561079357600080fd5b505af11580156107a7573d6000803e3d6000fd5b5050505050505600a165627a7a72305820988c59ad20aa7965fde31968985c821209a8073315287c8ad8cf86586185bde10029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632b36e5d714610072578063c22cf13d1461009d578063d13319c4146100b4578063eefcf03714610144578063f5ab4dfc1461016f575b600080fd5b34801561007e57600080fd5b506100876101e2565b6040518082815260200191505060405180910390f35b3480156100a957600080fd5b506100b26102e0565b005b3480156100c057600080fd5b506100c96103f4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101095780820151818401526020810190506100ee565b50505050905090810190601f1680156101365780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561015057600080fd5b50610159610564565b6040518082815260200191505060405180910390f35b34801561017b57600080fd5b506101e0600480360381019080803590602001908201803590602001908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050919291929080359060200190929190505050610662565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632d5a7327336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b1580156102a057600080fd5b505af11580156102b4573d6000803e3d6000fd5b505050506040513d60208110156102ca57600080fd5b8101908080519060200190929190505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166370cc40c2336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b15801561039c57600080fd5b505af11580156103b0573d6000803e3d6000fd5b505050507f1f539c631c40b55e3ee24c22c89479df886fc7cf245d7b9d35c995478bd867196103dd610564565b6040518082815260200191505060405180910390a1565b60606103fe6101e2565b610406610564565b10151561041257600080fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16631da0b8fc336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050600060405180830381600087803b1580156104ce57600080fd5b505af11580156104e2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f82011682018060405250602081101561050c57600080fd5b81019080805164010000000081111561052457600080fd5b8281019050602081018481111561053a57600080fd5b815185600182028301116401000000008211171561055757600080fd5b5050929190505050905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16639bff5a36336040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001915050602060405180830381600087803b15801561062257600080fd5b505af1158015610636573d6000803e3d6000fd5b505050506040513d602081101561064c57600080fd5b8101908080519060200190929190505050905090565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16634097b2913384846040518463ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b8381101561074557808201518184015260208101905061072a565b50505050905090810190601f1680156107725780820380516001836020036101000a031916815260200191505b50945050505050600060405180830381600087803b15801561079357600080fd5b505af11580156107a7573d6000803e3d6000fd5b5050505050505600a165627a7a72305820988c59ad20aa7965fde31968985c821209a8073315287c8ad8cf86586185bde10029",
+  "sourceMap": "56:979:0:-;;;168:115;8:9:-1;5:2;;;30:1;27;20:12;5:2;168:115:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;255:20;227:12;;:49;;;;;;;;;;;;;;;;;;168:115;56:979;;;;;;",
+  "deployedSourceMap": "56:979:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;900:128;;8:9:-1;5:2;;;30:1;27;20:12;5:2;900:128:0;;;;;;;;;;;;;;;;;;;;;;;470:118;;8:9:-1;5:2;;;30:1;27;20:12;5:2;470:118:0;;;;;;618:158;;8:9:-1;5:2;;;30:1;27;20:12;5:2;618:158:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;618:158:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;786:104;;8:9:-1;5:2;;;30:1;27;20:12;5:2;786:104:0;;;;;;;;;;;;;;;;;;;;;;;313:147;;8:9:-1;5:2;;;30:1;27;20:12;5:2;313:147:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;900:128;953:4;976:12;;;;;;;;;;;:33;;;1010:10;976:45;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;976:45:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;976:45:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;976:45:0;;;;;;;;;;;;;;;;969:52;;900:128;:::o;470:118::-;507:12;;;;;;;;;;;:21;;;529:10;507:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;507:33:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;507:33:0;;;;555:26;570:10;:8;:10::i;:::-;555:26;;;;;;;;;;;;;;;;;;470:118::o;618:158::-;658:6;697:22;:20;:22::i;:::-;684:10;:8;:10::i;:::-;:35;676:44;;;;;;;;737:12;;;;;;;;;;;:20;;;758:10;737:32;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;737:32:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;737:32:0;;;;;;39:16:-1;36:1;17:17;2:54;737:32:0;101:4:-1;97:9;90:4;84;80:15;76:31;69:5;65:43;126:6;120:4;113:20;0:138;13:2;8:3;5:11;2:2;;;29:1;26;19:12;2:2;737:32:0;;;;;;20:11:-1;15:3;12:20;9:2;;;45:1;42;35:12;9:2;73:11;68:3;64:21;57:28;;126:4;121:3;117:14;163:9;145:16;142:31;139:2;;;186:1;183;176:12;139:2;224:3;218:10;338:9;333:1;319:12;315:20;297:16;293:43;290:58;268:11;254:12;251:29;239:118;236:2;;;370:1;367;360:12;236:2;0:382;;737:32:0;;;;;;730:39;;618:158;:::o;786:104::-;827:4;850:12;;;;;;;;;;;:21;;;872:10;850:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;850:33:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;850:33:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;850:33:0;;;;;;;;;;;;;;;;843:40;;786:104;:::o;313:147::-;390:12;;;;;;;;;;;:20;;;411:10;423:9;434:18;390:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;390:63:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;390:63:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;390:63:0;;;;313:147;;:::o",
+  "source": "pragma solidity ^0.4.24;\n\nimport \"./ImageStorage.sol\";\n\ncontract ImageContract {\n    \n    event incrementViewd(uint viewd);    \n    ImageStorage imageStorage;\n    \n    constructor(address _imageStorageAddress) public {\n        imageStorage = ImageStorage(_imageStorageAddress);\n    }\n    \n    // setters\n    \n    function setHash(string _ipfsHash, uint _allowedViewNumber) public {\n        imageStorage.setHash(msg.sender, _ipfsHash, _allowedViewNumber);\n    }\n    \n    function setViewd() public {\n        imageStorage.setViewd(msg.sender);\n        emit incrementViewd(getViewd());\n    }\n    \n    \n    // getters\n    function getHash() public view returns (string) {\n        require(getViewd() < getAllowedViewNumber());\n        return imageStorage.getHash(msg.sender);\n    }\n    \n    function getViewd() public view returns (uint) {\n        return imageStorage.getViewd(msg.sender);\n    }\n    \n    function getAllowedViewNumber() public view returns (uint) {\n        return imageStorage.getAllowedViewNumber(msg.sender);\n    }\n    \n}",
   "sourcePath": "C:\\Users\\lucas.vieira\\Desktop\\Projetos\\blockchain-challenge\\image-uploader\\contracts\\ImageContract.sol",
   "ast": {
     "absolutePath": "/C/Users/lucas.vieira/Desktop/Projetos/blockchain-challenge/image-uploader/contracts/ImageContract.sol",
     "exportedSymbols": {
       "ImageContract": [
-        100
+        98
       ]
     },
-    "id": 101,
+    "id": 99,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -126,8 +126,8 @@
         "file": "./ImageStorage.sol",
         "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 101,
-        "sourceUnit": 259,
+        "scope": 99,
+        "sourceUnit": 257,
         "src": "26:28:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -138,9 +138,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 100,
+        "id": 98,
         "linearizedBaseContracts": [
-          100
+          98
         ],
         "name": "ImageContract",
         "nodeType": "ContractDefinition",
@@ -192,12 +192,12 @@
             "id": 8,
             "name": "imageStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 100,
+            "scope": 98,
             "src": "132:25:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ImageStorage_$258",
+              "typeIdentifier": "t_contract$_ImageStorage_$256",
               "typeString": "contract ImageStorage"
             },
             "typeName": {
@@ -205,10 +205,10 @@
               "id": 7,
               "name": "ImageStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 258,
+              "referencedDeclaration": 256,
               "src": "132:12:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ImageStorage_$258",
+                "typeIdentifier": "t_contract$_ImageStorage_$256",
                 "typeString": "contract ImageStorage"
               }
             },
@@ -238,7 +238,7 @@
                       "referencedDeclaration": 8,
                       "src": "227:12:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ImageStorage_$258",
+                        "typeIdentifier": "t_contract$_ImageStorage_$256",
                         "typeString": "contract ImageStorage"
                       }
                     },
@@ -272,10 +272,10 @@
                         "name": "ImageStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 258,
+                        "referencedDeclaration": 256,
                         "src": "242:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ImageStorage_$258_$",
+                          "typeIdentifier": "t_type$_t_contract$_ImageStorage_$256_$",
                           "typeString": "type(contract ImageStorage)"
                         }
                       },
@@ -289,13 +289,13 @@
                       "nodeType": "FunctionCall",
                       "src": "242:34:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ImageStorage_$258",
+                        "typeIdentifier": "t_contract$_ImageStorage_$256",
                         "typeString": "contract ImageStorage"
                       }
                     },
                     "src": "227:49:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ImageStorage_$258",
+                      "typeIdentifier": "t_contract$_ImageStorage_$256",
                       "typeString": "contract ImageStorage"
                     }
                   },
@@ -353,7 +353,7 @@
               "parameters": [],
               "src": "217:0:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "168:115:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -377,7 +377,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
+                          "referencedDeclaration": 271,
                           "src": "411:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -449,7 +449,7 @@
                         "referencedDeclaration": 8,
                         "src": "390:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
@@ -460,7 +460,7 @@
                       "lValueRequested": false,
                       "memberName": "setHash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 201,
+                      "referencedDeclaration": 199,
                       "src": "390:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_string_memory_ptr_$_t_uint256_$returns$__$",
@@ -561,7 +561,7 @@
               "parameters": [],
               "src": "380:0:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "313:147:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -585,7 +585,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
+                          "referencedDeclaration": 271,
                           "src": "529:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -623,7 +623,7 @@
                         "referencedDeclaration": 8,
                         "src": "507:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
@@ -634,7 +634,7 @@
                       "lValueRequested": false,
                       "memberName": "setViewd",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 215,
+                      "referencedDeclaration": 213,
                       "src": "507:21:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -672,7 +672,7 @@
                           "name": "getViewd",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 87,
+                          "referencedDeclaration": 85,
                           "src": "570:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
@@ -753,7 +753,7 @@
               "parameters": [],
               "src": "497:0:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "470:118:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -789,7 +789,7 @@
                             "name": "getViewd",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 87,
+                            "referencedDeclaration": 85,
                             "src": "684:8:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
@@ -821,7 +821,7 @@
                             "name": "getAllowedViewNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 99,
+                            "referencedDeclaration": 97,
                             "src": "697:20:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
@@ -860,10 +860,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        276,
-                        277
+                        274,
+                        275
                       ],
-                      "referencedDeclaration": 276,
+                      "referencedDeclaration": 274,
                       "src": "676:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -900,7 +900,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
+                          "referencedDeclaration": 271,
                           "src": "758:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -938,7 +938,7 @@
                         "referencedDeclaration": 8,
                         "src": "737:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
@@ -949,7 +949,7 @@
                       "lValueRequested": false,
                       "memberName": "getHash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 229,
+                      "referencedDeclaration": 227,
                       "src": "737:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_string_memory_ptr_$",
@@ -1025,7 +1025,7 @@
               ],
               "src": "657:8:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "618:158:0",
             "stateMutability": "view",
             "superFunction": null,
@@ -1033,138 +1033,101 @@
           },
           {
             "body": {
-              "id": 86,
+              "id": 84,
               "nodeType": "Block",
-              "src": "833:61:0",
+              "src": "833:57:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "commonType": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
-                    "id": 84,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftExpression": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 80,
-                            "name": "msg",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 273,
-                            "src": "872:3:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_magic_message",
-                              "typeString": "msg"
-                            }
-                          },
-                          "id": 81,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "sender",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": null,
-                          "src": "872:10:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        ],
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 78,
-                          "name": "imageStorage",
+                          "id": 80,
+                          "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8,
-                          "src": "850:12:0",
+                          "referencedDeclaration": 271,
+                          "src": "872:3:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ImageStorage_$258",
-                            "typeString": "contract ImageStorage"
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
                           }
                         },
-                        "id": 79,
+                        "id": 81,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberName": "getViewd",
+                        "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 243,
-                        "src": "850:21:0",
+                        "referencedDeclaration": null,
+                        "src": "872:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
-                          "typeString": "function (address) view external returns (uint256)"
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 78,
+                        "name": "imageStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "850:12:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
+                          "typeString": "contract ImageStorage"
                         }
                       },
-                      "id": 82,
+                      "id": 79,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
-                      "kind": "functionCall",
                       "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "850:33:0",
+                      "memberName": "getViewd",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 241,
+                      "src": "850:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) view external returns (uint256)"
                       }
                     },
-                    "nodeType": "BinaryOperation",
-                    "operator": "+",
-                    "rightExpression": {
-                      "argumentTypes": null,
-                      "hexValue": "31",
-                      "id": 83,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "886:1:0",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
-                      },
-                      "value": "1"
-                    },
-                    "src": "850:37:0",
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "850:33:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "functionReturnParameters": 77,
-                  "id": 85,
+                  "id": 83,
                   "nodeType": "Return",
-                  "src": "843:44:0"
+                  "src": "843:40:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 87,
+            "id": 85,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1187,7 +1150,7 @@
                   "id": 76,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 87,
+                  "scope": 85,
                   "src": "827:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1211,17 +1174,17 @@
               ],
               "src": "826:6:0"
             },
-            "scope": 100,
-            "src": "786:108:0",
+            "scope": 98,
+            "src": "786:104:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 98,
+              "id": 96,
               "nodeType": "Block",
-              "src": "963:69:0",
+              "src": "959:69:0",
               "statements": [
                 {
                   "expression": {
@@ -1231,18 +1194,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 94,
+                          "id": 92,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
-                          "src": "1014:3:0",
+                          "referencedDeclaration": 271,
+                          "src": "1010:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 95,
+                        "id": 93,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1250,7 +1213,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1014:10:0",
+                        "src": "1010:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1266,32 +1229,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 92,
+                        "id": 90,
                         "name": "imageStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "980:12:0",
+                        "src": "976:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
-                      "id": 93,
+                      "id": 91,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getAllowedViewNumber",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 257,
-                      "src": "980:33:0",
+                      "referencedDeclaration": 255,
+                      "src": "976:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) view external returns (uint256)"
                       }
                     },
-                    "id": 96,
+                    "id": 94,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1299,21 +1262,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "980:45:0",
+                    "src": "976:45:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 91,
-                  "id": 97,
+                  "functionReturnParameters": 89,
+                  "id": 95,
                   "nodeType": "Return",
-                  "src": "973:52:0"
+                  "src": "969:52:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 99,
+            "id": 97,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1321,23 +1284,23 @@
             "name": "getAllowedViewNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 88,
+              "id": 86,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "933:2:0"
+              "src": "929:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 91,
+              "id": 89,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 90,
+                  "id": 88,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 99,
-                  "src": "957:4:0",
+                  "scope": 97,
+                  "src": "953:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1345,10 +1308,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 89,
+                    "id": 87,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "957:4:0",
+                    "src": "953:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1358,29 +1321,29 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "956:6:0"
+              "src": "952:6:0"
             },
-            "scope": 100,
-            "src": "904:128:0",
+            "scope": 98,
+            "src": "900:128:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 101,
-        "src": "56:983:0"
+        "scope": 99,
+        "src": "56:979:0"
       }
     ],
-    "src": "0:1039:0"
+    "src": "0:1035:0"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/lucas.vieira/Desktop/Projetos/blockchain-challenge/image-uploader/contracts/ImageContract.sol",
     "exportedSymbols": {
       "ImageContract": [
-        100
+        98
       ]
     },
-    "id": 101,
+    "id": 99,
     "nodeType": "SourceUnit",
     "nodes": [
       {
@@ -1399,8 +1362,8 @@
         "file": "./ImageStorage.sol",
         "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 101,
-        "sourceUnit": 259,
+        "scope": 99,
+        "sourceUnit": 257,
         "src": "26:28:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1411,9 +1374,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 100,
+        "id": 98,
         "linearizedBaseContracts": [
-          100
+          98
         ],
         "name": "ImageContract",
         "nodeType": "ContractDefinition",
@@ -1465,12 +1428,12 @@
             "id": 8,
             "name": "imageStorage",
             "nodeType": "VariableDeclaration",
-            "scope": 100,
+            "scope": 98,
             "src": "132:25:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ImageStorage_$258",
+              "typeIdentifier": "t_contract$_ImageStorage_$256",
               "typeString": "contract ImageStorage"
             },
             "typeName": {
@@ -1478,10 +1441,10 @@
               "id": 7,
               "name": "ImageStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 258,
+              "referencedDeclaration": 256,
               "src": "132:12:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ImageStorage_$258",
+                "typeIdentifier": "t_contract$_ImageStorage_$256",
                 "typeString": "contract ImageStorage"
               }
             },
@@ -1511,7 +1474,7 @@
                       "referencedDeclaration": 8,
                       "src": "227:12:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ImageStorage_$258",
+                        "typeIdentifier": "t_contract$_ImageStorage_$256",
                         "typeString": "contract ImageStorage"
                       }
                     },
@@ -1545,10 +1508,10 @@
                         "name": "ImageStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 258,
+                        "referencedDeclaration": 256,
                         "src": "242:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ImageStorage_$258_$",
+                          "typeIdentifier": "t_type$_t_contract$_ImageStorage_$256_$",
                           "typeString": "type(contract ImageStorage)"
                         }
                       },
@@ -1562,13 +1525,13 @@
                       "nodeType": "FunctionCall",
                       "src": "242:34:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ImageStorage_$258",
+                        "typeIdentifier": "t_contract$_ImageStorage_$256",
                         "typeString": "contract ImageStorage"
                       }
                     },
                     "src": "227:49:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ImageStorage_$258",
+                      "typeIdentifier": "t_contract$_ImageStorage_$256",
                       "typeString": "contract ImageStorage"
                     }
                   },
@@ -1626,7 +1589,7 @@
               "parameters": [],
               "src": "217:0:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "168:115:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1650,7 +1613,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
+                          "referencedDeclaration": 271,
                           "src": "411:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1722,7 +1685,7 @@
                         "referencedDeclaration": 8,
                         "src": "390:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
@@ -1733,7 +1696,7 @@
                       "lValueRequested": false,
                       "memberName": "setHash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 201,
+                      "referencedDeclaration": 199,
                       "src": "390:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_string_memory_ptr_$_t_uint256_$returns$__$",
@@ -1834,7 +1797,7 @@
               "parameters": [],
               "src": "380:0:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "313:147:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1858,7 +1821,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
+                          "referencedDeclaration": 271,
                           "src": "529:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1896,7 +1859,7 @@
                         "referencedDeclaration": 8,
                         "src": "507:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
@@ -1907,7 +1870,7 @@
                       "lValueRequested": false,
                       "memberName": "setViewd",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 215,
+                      "referencedDeclaration": 213,
                       "src": "507:21:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$returns$__$",
@@ -1945,7 +1908,7 @@
                           "name": "getViewd",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 87,
+                          "referencedDeclaration": 85,
                           "src": "570:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
@@ -2026,7 +1989,7 @@
               "parameters": [],
               "src": "497:0:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "470:118:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2062,7 +2025,7 @@
                             "name": "getViewd",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 87,
+                            "referencedDeclaration": 85,
                             "src": "684:8:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
@@ -2094,7 +2057,7 @@
                             "name": "getAllowedViewNumber",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 99,
+                            "referencedDeclaration": 97,
                             "src": "697:20:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
@@ -2133,10 +2096,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        276,
-                        277
+                        274,
+                        275
                       ],
-                      "referencedDeclaration": 276,
+                      "referencedDeclaration": 274,
                       "src": "676:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -2173,7 +2136,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
+                          "referencedDeclaration": 271,
                           "src": "758:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -2211,7 +2174,7 @@
                         "referencedDeclaration": 8,
                         "src": "737:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
@@ -2222,7 +2185,7 @@
                       "lValueRequested": false,
                       "memberName": "getHash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 229,
+                      "referencedDeclaration": 227,
                       "src": "737:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_string_memory_ptr_$",
@@ -2298,7 +2261,7 @@
               ],
               "src": "657:8:0"
             },
-            "scope": 100,
+            "scope": 98,
             "src": "618:158:0",
             "stateMutability": "view",
             "superFunction": null,
@@ -2306,138 +2269,101 @@
           },
           {
             "body": {
-              "id": 86,
+              "id": 84,
               "nodeType": "Block",
-              "src": "833:61:0",
+              "src": "833:57:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "commonType": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
-                    "id": 84,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftExpression": {
-                      "argumentTypes": null,
-                      "arguments": [
-                        {
-                          "argumentTypes": null,
-                          "expression": {
-                            "argumentTypes": null,
-                            "id": 80,
-                            "name": "msg",
-                            "nodeType": "Identifier",
-                            "overloadedDeclarations": [],
-                            "referencedDeclaration": 273,
-                            "src": "872:3:0",
-                            "typeDescriptions": {
-                              "typeIdentifier": "t_magic_message",
-                              "typeString": "msg"
-                            }
-                          },
-                          "id": 81,
-                          "isConstant": false,
-                          "isLValue": false,
-                          "isPure": false,
-                          "lValueRequested": false,
-                          "memberName": "sender",
-                          "nodeType": "MemberAccess",
-                          "referencedDeclaration": null,
-                          "src": "872:10:0",
-                          "typeDescriptions": {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        }
-                      ],
-                      "expression": {
-                        "argumentTypes": [
-                          {
-                            "typeIdentifier": "t_address",
-                            "typeString": "address"
-                          }
-                        ],
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 78,
-                          "name": "imageStorage",
+                          "id": 80,
+                          "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8,
-                          "src": "850:12:0",
+                          "referencedDeclaration": 271,
+                          "src": "872:3:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_ImageStorage_$258",
-                            "typeString": "contract ImageStorage"
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
                           }
                         },
-                        "id": 79,
+                        "id": 81,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
-                        "memberName": "getViewd",
+                        "memberName": "sender",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 243,
-                        "src": "850:21:0",
+                        "referencedDeclaration": null,
+                        "src": "872:10:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
-                          "typeString": "function (address) view external returns (uint256)"
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 78,
+                        "name": "imageStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 8,
+                        "src": "850:12:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
+                          "typeString": "contract ImageStorage"
                         }
                       },
-                      "id": 82,
+                      "id": 79,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
-                      "kind": "functionCall",
                       "lValueRequested": false,
-                      "names": [],
-                      "nodeType": "FunctionCall",
-                      "src": "850:33:0",
+                      "memberName": "getViewd",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 241,
+                      "src": "850:21:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) view external returns (uint256)"
                       }
                     },
-                    "nodeType": "BinaryOperation",
-                    "operator": "+",
-                    "rightExpression": {
-                      "argumentTypes": null,
-                      "hexValue": "31",
-                      "id": 83,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "886:1:0",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_rational_1_by_1",
-                        "typeString": "int_const 1"
-                      },
-                      "value": "1"
-                    },
-                    "src": "850:37:0",
+                    "id": 82,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "850:33:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "functionReturnParameters": 77,
-                  "id": 85,
+                  "id": 83,
                   "nodeType": "Return",
-                  "src": "843:44:0"
+                  "src": "843:40:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 87,
+            "id": 85,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2460,7 +2386,7 @@
                   "id": 76,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 87,
+                  "scope": 85,
                   "src": "827:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2484,17 +2410,17 @@
               ],
               "src": "826:6:0"
             },
-            "scope": 100,
-            "src": "786:108:0",
+            "scope": 98,
+            "src": "786:104:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 98,
+              "id": 96,
               "nodeType": "Block",
-              "src": "963:69:0",
+              "src": "959:69:0",
               "statements": [
                 {
                   "expression": {
@@ -2504,18 +2430,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 94,
+                          "id": 92,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 273,
-                          "src": "1014:3:0",
+                          "referencedDeclaration": 271,
+                          "src": "1010:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 95,
+                        "id": 93,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2523,7 +2449,7 @@
                         "memberName": "sender",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "1014:10:0",
+                        "src": "1010:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -2539,32 +2465,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 92,
+                        "id": 90,
                         "name": "imageStorage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 8,
-                        "src": "980:12:0",
+                        "src": "976:12:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ImageStorage_$258",
+                          "typeIdentifier": "t_contract$_ImageStorage_$256",
                           "typeString": "contract ImageStorage"
                         }
                       },
-                      "id": 93,
+                      "id": 91,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getAllowedViewNumber",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 257,
-                      "src": "980:33:0",
+                      "referencedDeclaration": 255,
+                      "src": "976:33:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) view external returns (uint256)"
                       }
                     },
-                    "id": 96,
+                    "id": 94,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2572,21 +2498,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "980:45:0",
+                    "src": "976:45:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 91,
-                  "id": 97,
+                  "functionReturnParameters": 89,
+                  "id": 95,
                   "nodeType": "Return",
-                  "src": "973:52:0"
+                  "src": "969:52:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 99,
+            "id": 97,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2594,23 +2520,23 @@
             "name": "getAllowedViewNumber",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 88,
+              "id": 86,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "933:2:0"
+              "src": "929:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 91,
+              "id": 89,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 90,
+                  "id": 88,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 99,
-                  "src": "957:4:0",
+                  "scope": 97,
+                  "src": "953:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2618,10 +2544,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 89,
+                    "id": 87,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "957:4:0",
+                    "src": "953:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2631,20 +2557,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "956:6:0"
+              "src": "952:6:0"
             },
-            "scope": 100,
-            "src": "904:128:0",
+            "scope": 98,
+            "src": "900:128:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 101,
-        "src": "56:983:0"
+        "scope": 99,
+        "src": "56:979:0"
       }
     ],
-    "src": "0:1039:0"
+    "src": "0:1035:0"
   },
   "compiler": {
     "name": "solc",
@@ -2654,8 +2580,8 @@
     "4447": {
       "events": {},
       "links": {},
-      "address": "0x8f0483125fcb9aaaefa9209d8e9d7b9c8b9fb90f",
-      "transactionHash": "0x0318777dc2c5a2efd67eea7fbfee3085bfea97be7d17437a0db123b249f0f1a5"
+      "address": "0xaa588d3737b611bafd7bd713445b314bd453a5c8",
+      "transactionHash": "0xfcdb5d272b1a88a2833ac12b3e366aa8e7c3c0a1a2f44fc11ef15b753ce8bfdc"
     },
     "5777": {
       "events": {},
@@ -2665,5 +2591,5 @@
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-11-07T16:11:53.555Z"
+  "updatedAt": "2018-11-07T16:18:45.868Z"
 }
