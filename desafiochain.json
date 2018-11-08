@@ -1,5 +1,5 @@
 {
-    "name": "DemoPoA",
+    "name": "desafiochain",
     "engine": {
         "authorityRound": {
             "params": {
