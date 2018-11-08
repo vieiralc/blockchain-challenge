@@ -16,7 +16,7 @@
 
 ### Requirements to run the blockchain app on a private poa chain
 
-`> Parity    ^1.10.7` <br>
+> Parity    ^1.10.7 <br>
 > Parity UI ^0.3.0 (optional) <br>
 > Nodejs    ^11.0.0 <br>
 > npm       ^6.4.1 <br>
@@ -33,7 +33,7 @@
     > To connect the nodes to each other copy the enode from parity-ui or from the console log when starting the node and replace `enode://RESULT` in the command: <br>
         > curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541 <br>
 
-        > Do this for every node, don't forget to change the localhost port <br>
+        > Do this for every node, don't forget to change the localhost port 
 
 > with the blockchain running run `truffle migrate --reset` inside image-uploader folder to compile and migrate the smart contract to the poa <br>
 > You can also run `truffle test` to run the tests <br>
