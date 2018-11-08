@@ -28,27 +28,16 @@ class App extends Component {
 
   componentDidMount = async () => {
     try {
-      // Get network provider and web3 instance.
       const web3 = await getWeb3();
-
-      // Use web3 to get the user's accounts.
       const accounts = await web3.eth.getAccounts();
-
-      // Get the contract instance.
       const Contract = truffleContract(ImageContract);
+      
       Contract.setProvider(web3.currentProvider);
       const instance = await Contract.deployed();
       
-      // Set web3, accounts, and contract to the state, and then proceed with an
-      // example of interacting with the contract's methods.
       this.setState({ web3, account: accounts[0], contract: instance });
-      console.log('Default Account: ', this.state.account);
     } catch (error) {
-      // Catch any errors for any of the above operations.
-      alert(
-        `Failed to load web3, accounts, or contract. Check console for details.`
-      );
-      console.log(error);
+      alert(`Failed to load web3, accounts, or contract. Check console for details.`);
     }
   };
 
@@ -70,27 +59,21 @@ class App extends Component {
   onSubmit(e) {
     e.preventDefault()
 
-    ipfs.files.add(this.state.buffer, (err, res) => {
-      if (err) {
-        console.error("ipfs error: ", err);
-        return
-      }
+    //ipfs.files.add(this.state.buffer, (err, res) => {
+      //if (err) {
+        //console.error("ipfs error: ", err);
+        //return
+      //}
 
       const { contract } = this.state;
-
-      contract.setHash(res[0].hash, this.state.allowedViewNumber, { from: this.state.account })
+      let hash = "hash"
+      contract.setHash(hash, this.state.allowedViewNumber, { from: this.state.account })
         .then(result => {
-          // value from the contract to prove it worked
-          //return contract.getImage.call()
           alert("Image added!")
-          console.log(res[0].hash)
+          //console.log(res[0].hash)
+          console.log('hash: ', hash);
         })
-        // .then(ipfsHash => {
-        //   // Update the state with the result
-        //   this.setState({ ipfsHash })
-        //   console.log('this.state.ipfsHash: ', this.state.ipfsHash);
-        // })
-    })
+    //})
   }
 
   getImage(e) {
@@ -106,31 +89,15 @@ class App extends Component {
       .on('data', data => {
         console.log('Viewd', data.args.viewd.toNumber());
         contract.getHash({from: this.state.account})
-          .then(hash => {
-            console.log('Hash: ', hash);
-           
+          .then(ipfsHash => {
+            console.log('Hash: ', ipfsHash);
+            this.setState({ipfsHash});
           })
           .catch(err => {
             console.log('Erro', err);
-            this.setState({ipfsHash:
-              "QmU2RvWtScFD68Zp3PjMVJs4vRXQVj2txeBc1SM5TgyPLN"
-            })
           })
       })
   }
-
-  // runExample = async () => {
-  //   const { accounts, contract } = this.state;
-
-  //   // Stores a given value, 5 by default.
-  //   await contract.saveImage("5", { from: accounts[0] });
-
-  //   // Get the value from the contract to prove it worked.
-  //   const response = await contract.getImage();
-  //   //console.log(response)
-  //   // Update state with the result.
-  //   this.setState({ storageValue: response });
-  // };
 
   render() {
 
@@ -147,7 +114,7 @@ class App extends Component {
           <div className="pure-g">
             <div className="pure-u-1-1">
               <button onClick={this.getImage}>Your Image</button >
-              <p>This image is stored on IPFS & the Ethereum Blockchain</p>
+              <p>This image is stored on IPFS & Private POA Blochchain</p>
               <div style={{
                 width: '800px', 
                 height: '400px', 
