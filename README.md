@@ -16,7 +16,7 @@
 
 ### Requirements to run the blockchain app on a private poa chain
 
-> Parity    ^1.10.7 <br>
+`> Parity    ^1.10.7` <br>
 > Parity UI ^0.3.0 (optional) <br>
 > Nodejs    ^11.0.0 <br>
 > npm       ^6.4.1 <br>
