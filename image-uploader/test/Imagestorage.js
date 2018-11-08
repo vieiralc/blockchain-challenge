@@ -1,27 +1,39 @@
-const ImageStorage = artifacts.require("./ImageStorage.sol");
+const ImageContract = artifacts.require("./ImageContract.sol");
+const assert = require("assert");
+const truffleAssert = require("truffle-assertions");
 
-contract("ImageStorage", accounts => {
+var contractInstance;
+var hash = "QmU2RvWtScFD68Zp3PjMVJs4vRXQVj2txeBc1SM5TgyPLN";
+var allowedViewNumber = 3;
 
-  it("has the correct owner", async () => {
-    const imageStorageInstance = await ImageStorage.deployed();
-    let owner = imageStorageInstance.owner;
-    assert.equal(owner = accounts[0]);
+contract("ImageContract", accounts => {
+
+  beforeEach(async () => {
+    contractInstance = await ImageContract.deployed()
+  })
+
+  it("sets a hash correctly", async () => {
+    await contractInstance.setHash(hash, allowedViewNumber, { from: accounts[0]});
+    let returnedHash = await contractInstance.getHash({ from: accounts[0] });
+    assert(returnedHash, hash, "Sets the correct hash");
   });
 
-  it("initializes with the correct values", () => {
-    
-    // Set hash B43d578 and allowedViewNumber 2
-    imageStorageInstance.addImage(B43d578, 2, 
-      { from: accounts[0] });
+  it("sets times viewd correctly", async () => {
+    // viewd starts with 0;
+    let result = await contractInstance.setViewd({ from: accounts[0] }) // increments viewd
+    truffleAssert.eventEmitted(result, 'incrementViewd', event => {
+      return event.viewd == 1;
+    }, "incrementViewd should be emitted with correct parameters");
+  })
 
-    // Get stored image once
-    let storedHash = imageStorageInstance.getImage.call();
-    let viewd = imageStorageInstance.viewd;
-    let allowedViewNumber = imageStorageInstance.allowedViewNumber;
-    assert.equal(storedHash, B43d578, "The hash B43d578 was not stored correctly.");
-    assert.equal(viewd, 0, "The viewd number was not initialized correctly.");
-    assert.equal(allowedViewNumber, 2, "the allowedViewNumber was not initialized correctly.");
-  });
+  it("gets the correct viewd number", async() => {
+    let viewd = await contractInstance.getViewd({ from: accounts[0] });
+    assert(viewd, 0, "returns the correct viewd number");
+  })
 
+  it("gets the correct allowed view number", async() => {
+    let viewNumber = await contractInstance.getAllowedViewNumber({ from: accounts[0] });
+    assert(viewNumber, allowedViewNumber, "returns the correct allowed view number");
+  })
 
 });
