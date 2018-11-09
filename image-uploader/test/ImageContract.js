@@ -12,10 +12,12 @@ contract("ImageContract", accounts => {
     contractInstance = await ImageContract.deployed()
   })
 
-  it("sets a hash correctly", async () => {
+  it("sets a hash correctly and allowed view number", async () => {
     await contractInstance.setHash(hash, allowedViewNumber, { from: accounts[0]});
     let returnedHash = await contractInstance.getHash({ from: accounts[0] });
+    let returnedAllowedViewNumber = await contractInstance.getAllowedViewNumber({ from: accounts[0] });
     assert(returnedHash, hash, "Sets the correct hash");
+    assert(returnedAllowedViewNumber, allowedViewNumber, "Has the correct view number");
   });
 
   it("sets times viewd correctly", async () => {
