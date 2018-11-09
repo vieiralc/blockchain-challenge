@@ -15,7 +15,7 @@ contract("ImageContract", accounts => {
   it("sets a hash correctly and allowed view number", async () => {
     await contractInstance.setHash(hash, allowedViewNumber, { from: accounts[0]});
     let returnedHash = await contractInstance.getHash({ from: accounts[0] });
-    let returnedAllowedViewNumber = await contractInstance.getAllowedViewNumber({ from: accounts[0] });
+    let returnedAllowedViewNumber = await contractInstance.getAllowedViewNumber.call({ from: accounts[0] });
     assert(returnedHash, hash, "Sets the correct hash");
     assert(returnedAllowedViewNumber, allowedViewNumber, "Has the correct view number");
   });
@@ -29,12 +29,12 @@ contract("ImageContract", accounts => {
   })
 
   it("gets the correct viewd number", async() => {
-    let viewd = await contractInstance.getViewd({ from: accounts[0] });
+    let viewd = await contractInstance.getViewd.call({ from: accounts[0] });
     assert(viewd, 0, "returns the correct viewd number");
   })
 
   it("gets the correct allowed view number", async() => {
-    let viewNumber = await contractInstance.getAllowedViewNumber({ from: accounts[0] });
+    let viewNumber = await contractInstance.getAllowedViewNumber.call({ from: accounts[0] });
     assert(viewNumber, allowedViewNumber, "returns the correct allowed view number");
   })
 
