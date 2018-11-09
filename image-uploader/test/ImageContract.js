@@ -28,7 +28,7 @@ contract("ImageContract", accounts => {
     }, "incrementViewd should be emitted with correct parameters");
   })
 
-  it("gets the correct viewd number", async() => {
+  it("gets the correct viewd number", async () => {
     let viewd = await contractInstance.getViewd.call({ from: accounts[0] });
     assert(viewd, 0, "returns the correct viewd number");
   })
@@ -36,6 +36,17 @@ contract("ImageContract", accounts => {
   it("gets the correct allowed view number", async() => {
     let viewNumber = await contractInstance.getAllowedViewNumber.call({ from: accounts[0] });
     assert(viewNumber, allowedViewNumber, "returns the correct allowed view number");
+  })
+
+  it("should revert the transaction", async () => {
+    for(let i = 0; i < allowedViewNumber; i++)
+      await contractInstance.setViewd({ from: accounts[0] });
+
+    await truffleAssert.reverts(
+      contractInstance.getHash({ from: accounts[0] }), 
+      null,
+      "the hash should be viewd only a limited time"  
+    )
   })
 
 });
