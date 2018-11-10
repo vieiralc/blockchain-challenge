@@ -23,26 +23,109 @@
 
 ### Instructions
 
-> clone the repo <br>
-> run the validator nodes: <br>
-    > parity-ui --config node0.toml --ws-port=8180 --jsonrpc-cors all <br>
-    > parity-ui --config node1.toml --ws-port=8181 <br>
-    > parity-ui --config node2.toml --ws-port=8182 <br>
+clone repo
 
-> connect the nodes <br>
-    > To connect the nodes to each other copy the enode from parity-ui or from the console log when starting the node and replace `enode://RESULT` in the command: <br>
-        > curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541 <br>
+### Creating the POA Chain
 
-        > Do this for every node, don't forget to change the localhost port 
+// rodar no 0
+run parity --config node0.toml
 
-> with the blockchain running run `truffle migrate --reset` inside image-uploader folder to compile and migrate the smart contract to the poa <br>
-> You can also run `truffle test` to run the tests <br>
+// criar auth node 0
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node0", "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540
 
-> inside image-uploader/client run `yarn install to install the react modules` <br>
-> run `npm start` to start the dapp on port 3000 <br>
+// criar user accounts
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["user", "user"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540
 
-> use metamask to connect to the poa chain <br>
-> upload your image and select the number that you want to allow your image to be viewd <br>
-> click on "your image" button to show the image <br>
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["user1", "user1"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540
 
-> The image will be uploaded to ipfs and can only be view with the hash that is saved on the blockchain <br>
+// rodar no 1
+run parity --config node1.toml
+
+// criar auth node 1
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node1", "node1"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541
+
+// rodar no 2
+run parity --config node2.toml
+
+// criar auth node 2
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node2", "node2"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542
+
+// Paste auth nodes on desafiochain.json validators:
+"validators" : {
+                    "list": [
+                        "0x00bd138abd70e2f00903268f3db08f2d25677c9e",
+                        "0x00aa39d30f0d20ff03a22ccfc30b7efbfca597c2",
+                        "0x002e28950558fbede1a9675cb113f0bd20912019"
+                    ]
+                }
+
+// Paste user accounts on desafiochain.json accounts:
+"accounts": {
+        "0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+        "0x0000000000000000000000000000000000000002": { "balance": "1", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
+        "0x0000000000000000000000000000000000000003": { "balance": "1", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
+        "0x0000000000000000000000000000000000000004": { "balance": "1", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
+        "0x004ec07d2329997267ec62b4166639513386f32e": { "balance": "100000000000000000000000" },
+        "0x00d695cd9b0ff4edc8ce55b493aec495b597e235": { "balance": "100000000000000000000000"}
+    }
+
+// remove comments on node0.toml, node1.toml and node2.toml
+
+// start node0 with:
+parity --config node0.toml --ws-port=8180
+
+// if your not using parity-ui don't need --ws-port
+
+// copy its enode
+ [enode image]
+
+// Without stoping node0 start node1 with:
+parity --config node1.toml --ws-port=8181
+
+// Also, start node2:
+parity --config node2.toml --ws-port=8182
+
+### Connecting nodes to each other
+// node0 to node1:
+// replace `enode://RESULT` with enode0
+// localhost:8541 indicates node1 rpc port
+curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541
+
+// node0 to node2
+// replace `enode://RESULT` with enode0
+
+### Deploying the Smart Contract
+// localhost:8542 indicates node2 rpc port
+curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542 
+
+// Same thing for node1 to node2
+// replace `enode://RESULT` with enode1
+curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542 
+
+
+### Deploying the smart contract
+
+//migrate sm to poa chain:
+
+`cd image-uploader`
+`truffle migrate`
+
+// To test the smart contract
+// inside /image-uploader
+`yarn install`
+`truffle test`
+
+### Start the Dapp
+
+// Install metamask, connect it to localhost:8540 (node0 rpc port)
+// import user account with private key
+// Path do private keys:
+%HOMEPATH%\tmp\desafio0\keys\desafiochain
+
+// Start the Dapp
+
+`cd client`
+`yarn install`
+`yarn start`
+
+Finally interact with the smart contract throug the UI
