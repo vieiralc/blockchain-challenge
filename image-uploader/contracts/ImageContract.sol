@@ -25,7 +25,7 @@ contract ImageContract {
     
     // getters
     function getHash() public view returns (string) {
-        require(getViewd() < getAllowedViewNumber());
+        require(getViewd() <= getAllowedViewNumber(), "You are not allowed to see this image anymore");
         return imageStorage.getHash(msg.sender);
     }
     
