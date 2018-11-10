@@ -153,8 +153,8 @@ compile it again with <br>
 
 `truffle migrate -f 3`
 
-Dapp show image stored on IPFS: <br>
-![alt text](https://github.com/vieiralc/blockchain-challenge/blob/master/img/image.PNG) <br>
+Dapp showing image stored on IPFS: <br>
+![alt text](https://github.com/vieiralc/blockchain-challenge/blob/master/img/image.PNG) <br> <br>
 
 Dapp denying access to image (already saw image 3x) <br>
 ![alt text](https://github.com/vieiralc/blockchain-challenge/blob/master/img/notallowed.PNG) 
