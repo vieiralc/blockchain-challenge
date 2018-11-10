@@ -125,7 +125,7 @@ curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode
 
 migrate sm to poa chain: <br>
 
-`cd image-uploader`
+`cd image-uploader` <br>
 `truffle migrate`
 
 To test the smart contract
