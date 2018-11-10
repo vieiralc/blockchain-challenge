@@ -129,9 +129,9 @@ migrate sm to poa chain: <br>
 `truffle migrate`
 
 To test the smart contract
-inside /image-uploader
-`yarn install`
-`truffle test`
+inside /image-uploader <br>
+`yarn install` <br>
+`truffle test` <br>
 
 ### Start the Dapp
 
@@ -142,8 +142,8 @@ Path do private keys: <br>
 
 Start the Dapp <br>
 
-`cd client`
-`yarn install`
-`yarn start`
+`cd client` <br>
+`yarn install` <br>
+`yarn start` <br>
 
 Finally interact with the smart contract throug the UI
