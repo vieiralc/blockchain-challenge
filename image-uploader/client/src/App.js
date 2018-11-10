@@ -41,14 +41,15 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <div className="row justify-content-center">
+          <UploadImage
+            contract={this.state.contract}
+            account={this.state.account}
+          />  
+          
           <Image
             contract={this.state.contract} 
             account={this.state.account}  
           />  
-          <UploadImage
-            contract={this.state.contract}
-            account={this.state.account}
-          />        
         </div>
       </div>
     );
