@@ -39,7 +39,7 @@ class Image extends Component {
         return (
             <div className="col-md-6" style={{marginTop: "100px"}}>
                 <h2> Your image </h2>
-                <p>This image is stored on IPFS & Private POA Blochchain</p>
+                <p>This image is stored on IPFS & Private POA Blockchain</p>
                 <img src={`https://ipfs.io/ipfs/${this.state.ipfsHash}`} alt=""/>
                 <button onClick={this.getImage}>Your Image</button >
             </div>
