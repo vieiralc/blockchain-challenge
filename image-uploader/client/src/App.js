@@ -39,8 +39,7 @@ class App extends Component {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
-      <div className="container-fluid">
-        <div className="row justify-content-center">
+      <div className="row">
           <UploadImage
             contract={this.state.contract}
             account={this.state.account}
@@ -50,7 +49,6 @@ class App extends Component {
             contract={this.state.contract} 
             account={this.state.account}  
           />  
-        </div>
       </div>
     );
   }
