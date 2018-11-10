@@ -28,6 +28,9 @@ class Image extends Component {
                         console.log('Hash: ', ipfsHash);
                         this.setState({ipfsHash});
                     })
+                    .catch(error => {
+                        document.querySelector('.msg').innerHTML = "You are not allowed to see this image anymore";
+                    })
             
             .catch(err => {
                 console.log('Erro', err);
@@ -37,11 +40,11 @@ class Image extends Component {
 
     render() {
         return (
-            <div className="col-md-6" style={{marginTop: "100px"}}>
+            <div className="col s6" style={{marginTop: "100px"}}>
                 <h2> Your image </h2>
-                <p>This image is stored on IPFS & Private POA Blockchain</p>
-                <img src={`https://ipfs.io/ipfs/${this.state.ipfsHash}`} alt=""/>
-                <button onClick={this.getImage}>Your Image</button >
+                <p className="msg">This image is stored on IPFS & Private POA Blockchain</p>
+                <img className="responsive-img" src={`https://ipfs.io/ipfs/${this.state.ipfsHash}`} alt=""/>
+                <button className="btn waves-effect waves-light" onClick={this.getImage}>Your Image</button >
             </div>
         )
     }
