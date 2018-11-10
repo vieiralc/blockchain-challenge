@@ -31,43 +31,57 @@ rodar no 0 <br>
 `run parity --config node0.toml`
 
 criar auth node 0 <br>
-`curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node0", "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node0", "node0"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540
+```
 
 criar user accounts <br>
-`curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["user", "user"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["user", "user"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540
+```
 
-`curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["user1", "user1"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["user1", "user1"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8540
+```
 
 rodar no 1 <br>
 `run parity --config node1.toml`
 
 criar auth node 1 <br>
-`curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node1", "node1"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node1", "node1"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541
+```
 
 rodar no 2 <br>
 `run parity --config node2.toml`
 
 criar auth node 2 <br>
-`curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node2", "node2"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_newAccountFromPhrase","params":["node2", "node2"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542
+```
 
 Paste auth nodes on desafiochain.json validators: <br>
-`"validators" : {
-                    "list": [
-                        "0x00bd138abd70e2f00903268f3db08f2d25677c9e",
-                        "0x00aa39d30f0d20ff03a22ccfc30b7efbfca597c2",
-                        "0x002e28950558fbede1a9675cb113f0bd20912019"
-                    ]
-                }`
+```
+"validators" : {
+    "list": [
+        "0x00bd138abd70e2f00903268f3db08f2d25677c9e",
+        "0x00aa39d30f0d20ff03a22ccfc30b7efbfca597c2",
+        "0x002e28950558fbede1a9675cb113f0bd20912019"
+    ]
+}
+```
 
 Paste user accounts on desafiochain.json accounts: <br>
-`"accounts": {
+```
+"accounts": {
         "0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
         "0x0000000000000000000000000000000000000002": { "balance": "1", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
         "0x0000000000000000000000000000000000000003": { "balance": "1", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
         "0x0000000000000000000000000000000000000004": { "balance": "1", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
         "0x004ec07d2329997267ec62b4166639513386f32e": { "balance": "100000000000000000000000" },
         "0x00d695cd9b0ff4edc8ce55b493aec495b597e235": { "balance": "100000000000000000000000"}
-    }`
+}
+```
 
 remove comments on node0.toml, node1.toml and node2.toml <br>
 
@@ -89,16 +103,22 @@ Also, start node2: <br>
 node0 to node1: <br>
 replace `enode://RESULT` with enode0 <br>
 localhost:8541 indicates node1 rpc port <br>
-`curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8541
+```
 
 node0 to node2 <br>
 replace `enode://RESULT` with enode0 <br>
 localhost:8542 indicates node2 rpc port <br>
-`curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542
+```
 
 Same thing for node1 to node2 <br>
 replace `enode://RESULT` with enode1 <br>
-`curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542`
+```
+curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode://RESULT"],"id":0}' -H "Content-Type: application/json" -X POST localhost:8542
+```
 
 
 ### Deploying the smart contract
