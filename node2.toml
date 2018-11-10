@@ -16,4 +16,3 @@ disable = true
 password = ["node.pwds"]
 [mining]
 engine_signer = "0x002e28950558fbede1a9675cb113f0bd20912019"
-reseal_on_txs = "none"
