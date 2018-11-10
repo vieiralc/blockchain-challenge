@@ -51,17 +51,32 @@ class UploadImage extends Component {
     
     render() {
         return (
-            <div className="col-md-6" style={{marginTop: "100px"}}>
+            <div className="col s6" style={{marginTop: "100px"}}>
                 <h2>Upload Image</h2>
               
                 <form onSubmit={this.onSubmit}>
-                    
-                    <div class="input-field col s6">
-                        <input placeholder="Your Image here" type="file" onChange={this.captureFile} required class="validate"/>
+                    <div className="row">
+                        <div className="col s6" style={{marginLeft: "25px"}}>
+                            <div className="file-field input-field">
+                                <div className="btn">
+                                    <span>Image</span>
+                                    <input type="file" onChange={this.captureFile} required/>
+                                </div>
+                                <div className="file-path-wrapper">
+                                    <input className="file-path validate" type="text"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <input type="number" min="1" name="number" onChange={this.onChange} required/> <br/>
-                    <input type="submit"/>
+
+                    <div className="row">
+                        <div className="col s6" style={{marginLeft: "25px"}}>
+                            <input type="number" min="1" name="number" onChange={this.onChange} required/> <br/> <br/>
+                            <div className="right-align">
+                                <input className="btn waves-effect waves-light" type="submit"/>                
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         )
