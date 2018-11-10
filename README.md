@@ -129,3 +129,8 @@ curl --data '{"jsonrpc":"2.0","method":"parity_addReservedPeer","params":["enode
 `yarn start`
 
 Finally interact with the smart contract throug the UI
+
+To update the smart contract, change its logic and then 
+compile it again with <br>
+
+`truffle migrate -f 3`
