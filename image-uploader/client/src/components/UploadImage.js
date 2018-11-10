@@ -33,21 +33,20 @@ class UploadImage extends Component {
     onSubmit(e) {
         e.preventDefault()
 
-        //ipfs.files.add(this.state.buffer, (err, res) => {
-        //  if (err) {
-        //      console.error("ipfs error: ", err);
-        //      return
-        //  }
+        ipfs.files.add(this.state.buffer, (err, res) => {
+         if (err) {
+             console.error("ipfs error: ", err);
+             return
+         }
 
             const { contract, account } = this.props;
-            let hash = "hash" // res[0].hash
+            let hash = res[0].hash
             contract.setHash(hash, this.state.allowedViewNumber, { from: account })
                 .then(result => {
                     alert("Image added!")
-                    //console.log(res[0].hash)
-                    console.log('hash: ', hash);
+                    console.log(hash)
                 })
-        //})
+        })
     }
     
     render() {
